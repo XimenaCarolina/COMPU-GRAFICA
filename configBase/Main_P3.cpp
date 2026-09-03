@@ -239,10 +239,10 @@ int main() {
 		
 
 		glm::vec3 posiciones[] = {
-glm::vec3(-3.5f, 2.5f, 0.0f), 
-glm::vec3(3.5f, 2.5f, 0.0f), 
-glm::vec3(-3.5f, -2.5f, 0.0f), 
-glm::vec3(3.5f, -2.5f, 0.0f) 
+		glm::vec3(-3.5f, 2.5f, 0.0f), 
+		glm::vec3(3.5f, 2.5f, 0.0f), 
+		glm::vec3(-3.5f, -2.5f, 0.0f), 
+		glm::vec3(3.5f, -2.5f, 0.0f) 
 		};
 
 		float rotaciones[] = {
@@ -258,16 +258,9 @@ glm::vec3(3.5f, -2.5f, 0.0f)
 
 			model = glm::translate(model, posiciones[i]);
 
-			model = glm::rotate(
-				model,
-				rotaciones[i],
-				glm::vec3(0.0f, 0.0f, 1.0f)
-			);
+			model = glm::rotate(	model,	rotaciones[i],	glm::vec3(0.0f, 0.0f, 1.0f)	);
 
-			glUniformMatrix4fv(
-				modelLoc,
-				1,
-				GL_FALSE,
+			glUniformMatrix4fv(	modelLoc,	1,	GL_FALSE,
 				glm::value_ptr(model)
 			);
 
