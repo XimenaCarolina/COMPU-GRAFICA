@@ -13,20 +13,20 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Archivos de origen\Shader">
+    <Filter Include="Archivos de encabezado\Shader">
       <UniqueIdentifier>{c442fa87-cb94-4689-bd81-6d6ba88fec86}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Shader\core.frag">
-      <Filter>Archivos de origen\Shader</Filter>
+      <Filter>Archivos de encabezado\Shader</Filter>
     </None>
     <None Include="Shader\core.vs">
-      <Filter>Archivos de origen\Shader</Filter>
+      <Filter>Archivos de encabezado\Shader</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main_Dibujo2D.cpp">
+    <ClCompile Include="Main_P3.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
