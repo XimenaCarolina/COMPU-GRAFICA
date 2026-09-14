@@ -223,25 +223,25 @@ int main() {
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 		
 
-		//glm::vec3 patas[] = {
-		//glm::vec3(-1.7f, -0.15f, 0.8f),
-		//glm::vec3(1.7f, -0.15f,0.8f),
-		//glm::vec3(-1.7f, -0.15f,-0.8f),
-		//glm::vec3(1.7f, -0.15f,-0.8f)
-		//};
+		glm::vec3 patas[] = {
+		glm::vec3(-1.7f, -0.15f, 0.8f),
+		glm::vec3(1.7f, -0.15f,0.8f),
+		glm::vec3(-1.7f, -0.15f,-0.8f),
+		glm::vec3(1.7f, -0.15f,-0.8f)
+		};
 
-		//for (int i = 0; i < 4; i++)
-		//{
-		//	model = glm::mat4(1.0f);
+		for (int i = 0; i < 4; i++)
+		{
+			model = glm::mat4(1.0f);
 
-		//	model = glm::translate(model, patas[i]);
+			model = glm::translate(model, patas[i]);
 
-		//	model = glm::scale(model, glm::vec3(0.3f, 2.0f, 0.3f));
+			model = glm::scale(model, glm::vec3(0.3f, 2.0f, 0.3f));
 
-		//	glUniformMatrix4fv(modelLoc,1,GL_FALSE,glm::value_ptr(model));
+			glUniformMatrix4fv(modelLoc,1,GL_FALSE,glm::value_ptr(model));
 
-		//	glDrawArrays(GL_TRIANGLES, 0, 36);
-		//}
+			glDrawArrays(GL_TRIANGLES, 0, 36);
+		}
 
 
 		/*dibujarPata(glm::vec3(-1.7f, -0.15f, 0.7f), modelLoc);
@@ -273,29 +273,29 @@ int main() {
 	 if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)  //GLFW_RELEASE
 		 glfwSetWindowShouldClose(window, true);
 	 if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-		 movX += 0.08f;
+		 movX += 0.02f;
 	 if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-		 movX -= 0.08f;
+		 movX -= 0.02f;
 	 if (glfwGetKey(window, GLFW_KEY_PAGE_UP) == GLFW_PRESS)
-		 movY += 0.08f;
+		 movY += 0.02f;
 	 if (glfwGetKey(window, GLFW_KEY_PAGE_DOWN) == GLFW_PRESS)
-		 movY -= 0.08f;
+		 movY -= 0.02f;
 	 if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-		 movZ -= 0.08f;
+		 movZ -= 0.02f;
 	 if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-		 movZ += 0.08f;
+		 movZ += 0.02f;
 	 if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS)
-		 rotx += 0.4f;
+		 rotx += 0.1f;
 	 if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)
-		 rotx -= 0.4f;
+		 rotx -= 0.1f;
 	 if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
-		 roty += 0.4f;
+		 roty += 0.1f;
 	 if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
-		 roty -= 0.4f;
+		 roty -= 0.1f;
 	 if (glfwGetKey(window, GLFW_KEY_F) == GLFW_PRESS)
-		 rotz += 0.4f;
+		 rotz += 0.1f;
 	 if (glfwGetKey(window, GLFW_KEY_G) == GLFW_PRESS)
-		 rotz -= 0.4f;
+		 rotz -= 0.1f;
  }
 
 
