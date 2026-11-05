@@ -254,7 +254,7 @@ int main()
 	Model Piso((char*)"Models/piso.obj");
 	Model Ball((char*)"Models/ball.obj");
 
-	//hola
+	//hol
 
 	//KeyFrames
 	for (int i = 0; i < MAX_FRAMES; i++)
